@@ -1,0 +1,61 @@
+#flex-container
+{
+  display:flex;
+  overflow: auto;
+  align-content: center;
+  width: 550px;
+  background: red;
+}
+#flex-container .flex-item
+{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 150px;
+  height: auto;
+
+  padding: 10px;
+}
+#flex-container .flex-icon
+{
+  content:url("https://i.postimg.cc/JhXQShwZ/ld-menu-open-128.png");
+  float:left; 
+  width:20px;
+}
+#flex-container .flex-caption
+{
+  color:white; 
+  word-spacing: 100vw;
+}
+#flex-container .flex-photo-row
+{
+  background: white;
+  position: relative;
+}
+#flex-container .flex-photo
+{
+  width:100%;
+  height:150px;
+}
+#flex-container .flex-favor
+{
+   position: absolute;
+   width: 20%;
+   top: 7%;
+   left: 7%;
+}
+#flex-container .flex-desc
+{
+  background: white;
+}
+#flex-container .flex-desc1
+{
+  width:100%;
+}
+#flex-container .flex-desc2
+{
+  Width 100%; 
+  color:red;
+  height: 60px;
+  overflow-y: hide;
+  word-spacing: unset;
+}
