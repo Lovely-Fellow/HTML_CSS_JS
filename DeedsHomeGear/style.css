@@ -1,0 +1,62 @@
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.flex-container
+{
+  display:flex;
+  overflow: auto;
+  align-content: center;
+  width: 550px;
+  background: white;
+}
+.flex-container .flex-item
+{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 150px;
+  height: auto;
+
+  padding: 10px;
+}
+.flex-container .flex-favor
+{
+   width: 25px;
+   float:left; 
+}
+.flex-container .flex-caption
+{
+  color:Red;
+  vertical-align:middle
+}
+
+.flex-container .flex-photo-row
+{
+  background: white;
+  position: relative;
+}
+.flex-container .flex-photo
+{
+  width:100%;
+  height:150px;
+}
+
+.flex-container .flex-icon
+{
+  content:url("https://devdemodeeds.wpengine.com/wp-content/uploads/2019/01/ultra_run.png");
+  float:left; 
+  width:35px;
+ }
+
+.flex-container .flex-athlete
+{
+  background: white;
+}
+.flex-container .flex-sport
+{
+  color: red;
+}
