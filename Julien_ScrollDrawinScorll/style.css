@@ -1,0 +1,50 @@
+body {
+  background: #00838f;
+}
+#wrapper {
+  height: 3000px;
+  background: blue;
+  display:flex;
+  justify-content: center;
+}
+svg {
+    position: relative;
+}
+#topdiv {
+    height: 1000px;
+	background: red;
+}
+.topdiv_move
+{
+	position: relative;
+}
+.topdiv_fixed
+{
+}
+#bottomdiv {
+    height: 1000px;
+	background: green;
+}
+.bottomdiv_move
+{
+	position: relative;
+}
+.bottomdiv_fixed
+{
+	position:absolute;
+	width: 100%;
+}
+#viewport, .viewport
+{
+	height: 300px;
+	overflow: scroll;
+}
+.viewport_move {
+	
+	position: relative;
+}
+.viewport_fixed
+{
+	position:fixed;
+	width: 100%;
+}
