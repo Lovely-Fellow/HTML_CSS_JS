@@ -10,21 +10,24 @@ body {
 svg {
     position: relative;
 }
+
 #topdiv {
     height: 1000px;
 	background: red;
 }
+/*
 .topdiv_move
 {
 	position: relative;
 }
 .topdiv_fixed
 {
-}
+}*/
 #bottomdiv {
     height: 1000px;
 	background: green;
 }
+/*
 .bottomdiv_move
 {
 	position: relative;
@@ -34,6 +37,7 @@ svg {
 	position:absolute;
 	width: 100%;
 }
+*/
 #viewport, .viewport
 {
 	height: 300px;
