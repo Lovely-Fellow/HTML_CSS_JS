@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 	var $wrapper_height = $wrapper.height();
 		$viewport_height = $viewport.height();
 		$start_viewport_top =  $win.height() / 2;
-		$end_viewport_top = $start_viewport_top + $viewport_height;
+
 	console.log("windowheight", $win.height());
 	$svg.css("top", $start_viewport_top);
 	function change_to_fixedpos()
@@ -78,5 +78,6 @@ jQuery(document).ready(function($) {
 			}
 		}
 		$lastScrollTop = $win_scrollTop;
+		event.preventDefault();
 	});
 });
