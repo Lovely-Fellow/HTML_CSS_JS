@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font: 400 1.35rem sans-serif;
+  color: #7a7a8c;
+  background-color: #1d1e22;
+  background: radial-gradient(#4c4f5a 6%, transparent 6%), #18191c;
+  background-position: 0 0, 25px 25px;
+  background-size: 25px 25px;
+}
+a {
+  text-decoration: none;
+  color: #7a7a8c;
+  font-size: 0.675rem;
+}
+.container {
+  position: relative;
+  padding: 0.675rem;
+  display: flex;
+  min-width: 400px;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.45rem;
+  background-color: #1d1e22;
+  box-shadow: 0 5px 30px rgba(1, 1, 1, 0.3);
+}
+.container .name {
+  margin-bottom: 0.675rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .name h4 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #dadadf;
+  transform: scale(0);
+  transform-origin: 100% 50%;
+  transition: transform 500ms ease;
+}
+.container svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.container svg.gear {
+  order: 1;
+  margin-left: 1.35rem;
+  cursor: help;
+}
+.container svg.gear:hover ~ h4 {
+  transform: scale(1);
+}
+.btn {
+  position: absolute;
+  bottom: 1.35rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn a {
+  margin: auto 1.35rem;
+}
+label {
+  position: relative;
+  margin: 0.675rem 1.35rem;
+  display: flex;
+  width: auto;
+  align-items: center;
+  cursor: pointer;
+}
+.check {
+  margin-right: 7px;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.check #border {
+  fill: none;
+  stroke: #7a7a8c;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.check #dot {
+  fill: url(#gradient);
+  transform: scale(0);
+  transform-origin: 50% 50%;
+}
+input {
+  display: none;
+}
+input:checked + label {
+  background: linear-gradient(180deg, #ff8a00, #da1b60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+input:checked + label svg #border {
+  stroke: url(#gradient);
+  stroke-dasharray: 145;
+  stroke-dashoffset: 145;
+  animation: checked 500ms ease forwards;
+}
+input:checked + label svg #dot {
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.57, 0.21, 0.69, 3.25);
+}
+@keyframes checked {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
