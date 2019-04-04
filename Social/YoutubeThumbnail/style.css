@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+    background-color:#f9f9f9;
+    font-size:16px
+    color:#444;
+  font-family: 'Open Sans', sans-serif;
+}
+.post-body h2{
+    color:#e25633;
+}
+.post-body {
+    max-width:680px;
+    margin:20px auto;
+    border:10px solid #f0f0f0;
+    padding:15px 20px;
+    background-color:#fff;
+    color:#444;
+}
+.youtubeBorder{
+    background:none repeat scroll 0 0 #fff;
+    border:1px solid #e0e0e0;
+    border-radius:2px;box-shadow:0 2px 4px rgba(0,0,0,0.2);
+    margin:10px 0 20px;
+    padding:4px
+}
+.youtubeBorder p.post-video{
+    margin:0!important
+}
+.youtube{
+    background-color:#000;
+    max-width:100%;
+    overflow:hidden;
+    position:relative;
+    cursor:hand;
+    cursor:pointer;
+    height:330px;
+    width:100%
+}
+.youtube .thumb{
+    bottom:0;
+    display:block;
+    left:0;
+    margin:auto;
+    max-width:100%;
+    position:absolute;
+    right:0;
+    top:0;
+    width:100%;
+    height:auto;
+    opacity:.8;
+}
+.youtube .play{
+    opacity:.9;
+    height:77px;
+    left:50%;
+    margin-left:-38px;
+    margin-top:-38px;
+    position:absolute;
+    top:50%;
+    width:77px;
+    background:url(https://1.bp.blogspot.com/-UxHkp1GZmYI/VEpXsS2YAeI/AAAAAAAAHH0/kgw4wjcrOvw/s1600/play.png) no-repeat}
+.play:hover {
+    opacity:1;
+}
