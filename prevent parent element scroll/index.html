@@ -1,0 +1,48 @@
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" media="screen" />
+
+<script type="text/javascript" src="code.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<h1>Prevent parent scrolling</h1>
+
+<section id="parent-left">      
+
+  <div id="mousewheel-prevented">
+    Scrolling trap enabled! <span id="prevented-count"></span>
+  </div>
+  
+  <div class="trapScroll child">              
+    
+    <div class="scrollable-content">
+      <h2>Scrolling (mousewheel / trackpad) in here doesn't scroll parent elements</h2>            
+    </div>
+
+    <div class="scroll-down-msg">
+      Scroll down <i class="fa-angle-down"></i>
+    </div>
+    
+  </div>
+  
+  <div id="mousewheel-prevented">
+    Scrolling trap enabled! (try scrolling down) <span id="prevented-count"></span>
+  </div>
+  <p class="notes">Works with: <b>Chrome</b>, <b>IE10+</b>, <b>Firefox</b> and <b>Opera</b>. Enjoy!</p>    
+  
+  <div class="force-parent-scrollbar"></div>
+</section>
+
+<section id="parent-right">
+  <div class="child">
+    
+    <div class="scrollable-content">
+      <h2>Scrolling here will scroll its parents</h2>
+    </div>
+    
+    <div class="scroll-down-msg">
+      Scroll down <i class="fa-angle-down"></i>
+    </div>
+  </div>
+  
+  <div class="force-parent-scrollbar"></div>
+</section>
