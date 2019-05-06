@@ -1,0 +1,18 @@
+#flex-container
+{
+  display:flex;
+  overflow: auto;
+  align-content: center;
+  background: red;
+}
+#flex-container .flex-item
+{
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: auto;
+  padding: 8px;
+}
+#flex-container .flex-video
+{
+    height: 200px;
+}
