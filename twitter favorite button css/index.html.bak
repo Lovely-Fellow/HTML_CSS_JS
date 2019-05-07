@@ -1,0 +1,9 @@
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="code.js"></script>
+<h4>Click le star to add to favourites</h4>
+<div class="click">
+	<span class="fa fa-star-o"></span>
+	<div class="ring"></div>
+	<div class="ring2"></div>
+	<p class="info">Added to favourites!</p>
+</div>
