@@ -1,0 +1,84 @@
+.rating {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  flex: 0 0 auto;
+  border: 1px dashed #333;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.rating label {
+  position: relative;
+  cursor: pointer;
+  flex: 0;
+}
+
+.rating label::before{ 
+  content: "\2605";
+}
+
+.rating:hover,
+.rating:focus-within,
+.rating:active {
+  
+  border-color: #FFD700; 
+}
+
+.rating input,
+.rating span { 
+  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0,0,0,0);
+}
+
+input:checked ~ label {
+  
+  color: black;
+}
+
+input:checked ~ label:hover {
+  
+  color: #FFD700;
+}
+
+input:checked + label {
+  
+  color: white;
+}
+
+input:checked + label:hover {
+  
+  color: #FFD700;
+}
+
+input:focus + label,
+input:checked + label:active {
+  
+  color: #FFD700;
+}
+
+label:hover {
+  
+  color: #FFD700;
+}
+
+body { 
+  margin: 1rem;
+  text-align: center;
+  background: #222225; 
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
