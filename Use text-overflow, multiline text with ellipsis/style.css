@@ -1,0 +1,18 @@
+body {
+  padding: 3em 2em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #cf6824;
+  background: #f7f5eb;
+}
+
+h2 {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  width: 300px;
+  -webkit-line-clamp: 2;
+  height: 3em; /* Fallback for non-webkit */
+  -webkit-box-orient: vertical;
+  line-height: 1em; /* Fallback for non-webkit */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
