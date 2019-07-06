@@ -1,0 +1,16 @@
+.result_table_container table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  background: white;
+}
+.result_table_container th, td {
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.result_table_container {
+  width: calc(100% - 175px);
+}
